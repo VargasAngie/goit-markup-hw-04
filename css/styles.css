@@ -129,7 +129,11 @@ header {
 .initial-section {
   background-color: #2f303a;
   padding: 200px 0;
-  background-image: url(./Initial-image.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(./Initial-image.jpg);
   background-size: cover;
 }
 
@@ -243,6 +247,11 @@ header {
 .team-section-list li {
   background-color: var(--white);
   width: 270px;
+}
+
+.team-section-list > li > div {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-name {
@@ -370,7 +379,7 @@ footer {
 }
 
 .footer-box {
-display: flex;
+  display: flex;
 }
 
 .social-media {
@@ -378,18 +387,18 @@ display: flex;
 }
 
 .social-text {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #FFFFFF;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .footer-fill {
-    fill: var(--white);
+  fill: var(--white);
 }
 
 .footer-link-list {
@@ -466,6 +475,12 @@ color: #FFFFFF;
 
 .projects-section-list li {
   border: 1px solid #eeeeee;
+}
+
+.projects-section-list li:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .project-name {
